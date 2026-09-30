@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_verify_nomusic" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/request_permission_hint" android:maxLines="1" />
+    <androidx.appcompat.widget.AppCompatButton android:textSize="@dimen/main_text_small_size" android:textColor="#ffd9abff" android:id="@id/request_premission" android:background="@drawable/shape_oval_c_d9abff" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="28.0dip" android:text="@string/request_permission" android:maxLines="1" android:textAllCaps="false" android:paddingStart="39.0dip" android:paddingEnd="39.0dip" />
+</LinearLayout>

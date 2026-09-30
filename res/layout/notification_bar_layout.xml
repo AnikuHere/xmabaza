@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="start|center" android:layout_gravity="start|center" android:orientation="horizontal" android:background="@drawable/shape_oval_ff979797_r4" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_search_notify" android:layout_marginStart="16.0dip" android:layout_marginEnd="8.0dip" />
+            <TextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/c_262626" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_search_hint" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

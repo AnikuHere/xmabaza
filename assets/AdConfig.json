@@ -1,0 +1,108 @@
+{
+  "showCount": 100,
+  "sameInterval": 30,
+  "differentInterval": 30,
+  "timeOut": 10,
+  "mixDownloadTotalcount": 1,
+  "mixDownloadInternalcount": 1,
+  "downloadivtime": 0,
+  "openivtime": 30,
+  "NormalBanner": [
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "banner",
+      "placementid": "ca-app-pub-7877849663173605/4289653853"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "banner",
+      "placementid": "ca-app-pub-7877849663173605/2785000495"
+    }
+  ],
+  "PageBanner": [
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "banner",
+      "placementid": "ca-app-pub-7877849663173605/3475795866"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "banner",
+      "placementid": "ca-app-pub-7877849663173605/1990793577"
+    }
+  ],
+  "mixnative": [
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "native",
+      "placementid": "ca-app-pub-7877849663173605/6807016307"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "native",
+      "placementid": "ca-app-pub-7877849663173605/7022638729"
+    }
+  ],
+  "NVsearch": [
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "native",
+      "placementid": "ca-app-pub-7877849663173605/6807016307"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "native",
+      "placementid": "ca-app-pub-7877849663173605/7022638729"
+    }
+  ],
+  "open": [
+    {
+      "adsource": "admob",
+      "adweight": 3,
+      "adtype": "open",
+      "placementid": "ca-app-pub-7877849663173605/9602220516"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-7877849663173605/1411219394"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-7877849663173605/8033457741"
+    }
+  ],
+  "behavior": [
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-7877849663173605/3598399030"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-7877849663173605/2285317365"
+    }
+  ],
+  "mixIVSetting": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "rewarded",
+      "placementid": "ca-app-pub-7877849663173605/7841886055"
+    }
+  ]
+}

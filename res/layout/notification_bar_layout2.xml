@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/clean_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bar_icon_clean" />
+        <TextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/clean" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/boost_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bar_icon_speed" />
+        <TextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/boost" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bar_icon_search" />
+        <TextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/search_hint" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

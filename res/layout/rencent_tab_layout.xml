@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/main_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_smaller_size" android:textColor="@color/main_small_text_color" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" />
+</LinearLayout>

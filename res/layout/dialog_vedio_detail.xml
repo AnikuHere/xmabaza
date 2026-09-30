@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:background="@drawable/shape_round_262626" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_size" android:textColor="@color/main_text_color" android:id="@id/audio_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/detail" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/audio_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_close" android:layout_marginStart="20.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <View android:background="@color/c_1AFFFFFF" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="72.0dip" android:layout_height="wrap_content" android:text="@string/audio_name_des" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_text_color" android:id="@id/audio_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="72.0dip" android:layout_height="wrap_content" android:text="@string/audio_size_des" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_text_color" android:id="@id/audio_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="8.23MB" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="72.0dip" android:layout_height="wrap_content" android:text="@string/audio_contenttype_des" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_text_color" android:id="@id/audio_contentType" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text=".MP4" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_small_text_color" android:layout_width="72.0dip" android:layout_height="wrap_content" android:text="@string/audio_duration_des" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textColor="@color/main_text_color" android:id="@id/audio_duration" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="00:00" android:layout_weight="1.0" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>

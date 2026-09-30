@@ -1,0 +1,407 @@
+.class final Lcom/unity3d/ads/InterstitialAd$show$1;
+.super LϨ/և;
+.source "SourceFile"
+
+# interfaces
+.implements Lᛷ/ᒃ;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/unity3d/ads/InterstitialAd;->show(Landroid/app/Activity;Lcom/unity3d/ads/ShowConfiguration;Lcom/unity3d/ads/InterstitialShowListener;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "L\u03e8/\u0587;",
+        "L\u16f7/\u1483;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\u008a@\u00a2\u0006\u0004\u0008\u0002\u0010\u0003"
+    }
+    d2 = {
+        "L\u166f/\u0715;",
+        "L\u0ede/\u146c;",
+        "<anonymous>",
+        "(L\u166f/\u0715;)V"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x8,
+        0x0
+    }
+.end annotation
+
+.annotation runtime LϨ/ࣈ;
+    c = "com.unity3d.ads.InterstitialAd$show$1"
+    f = "InterstitialAd.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field final synthetic $activity:Landroid/app/Activity;
+
+.field final synthetic $configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+.field final synthetic $listener:Lcom/unity3d/ads/InterstitialShowListener;
+
+.field label:I
+
+.field final synthetic this$0:Lcom/unity3d/ads/InterstitialAd;
+
+
+# direct methods
+.method public constructor <init>(Lcom/unity3d/ads/ShowConfiguration;Lcom/unity3d/ads/InterstitialAd;Landroid/app/Activity;Lcom/unity3d/ads/InterstitialShowListener;LᏉ/ݔ;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/unity3d/ads/ShowConfiguration;",
+            "Lcom/unity3d/ads/InterstitialAd;",
+            "Landroid/app/Activity;",
+            "Lcom/unity3d/ads/InterstitialShowListener;",
+            "L\u13c9/\u0754;",
+            ")V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    iput-object p2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    iput-object p3, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$activity:Landroid/app/Activity;
+
+    iput-object p4, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$listener:Lcom/unity3d/ads/InterstitialShowListener;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p5}, LϨ/և;-><init>(ILᏉ/ݔ;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;LᏉ/ݔ;)LᏉ/ݔ;
+    .locals 6
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .param p2    # LᏉ/ݔ;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "L\u13c9/\u0754;",
+            ")",
+            "L\u13c9/\u0754;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/NotNull;
+    .end annotation
+
+    new-instance v0, Lcom/unity3d/ads/InterstitialAd$show$1;
+
+    iget-object v1, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    iget-object v3, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$activity:Landroid/app/Activity;
+
+    iget-object v4, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$listener:Lcom/unity3d/ads/InterstitialShowListener;
+
+    move-object v5, p2
+
+    invoke-direct/range {v0 .. v5}, Lcom/unity3d/ads/InterstitialAd$show$1;-><init>(Lcom/unity3d/ads/ShowConfiguration;Lcom/unity3d/ads/InterstitialAd;Landroid/app/Activity;Lcom/unity3d/ads/InterstitialShowListener;LᏉ/ݔ;)V
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lᙯ/ܕ;
+
+    check-cast p2, LᏉ/ݔ;
+
+    invoke-virtual {p0, p1, p2}, Lcom/unity3d/ads/InterstitialAd$show$1;->invoke(Lᙯ/ܕ;LᏉ/ݔ;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lᙯ/ܕ;LᏉ/ݔ;)Ljava/lang/Object;
+    .locals 0
+    .param p1    # Lᙯ/ܕ;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .param p2    # LᏉ/ݔ;
+        .annotation build Lorg/jetbrains/annotations/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "L\u166f/\u0715;",
+            "L\u13c9/\u0754;",
+            ")",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lcom/unity3d/ads/InterstitialAd$show$1;->create(Ljava/lang/Object;LᏉ/ݔ;)LᏉ/ݔ;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/unity3d/ads/InterstitialAd$show$1;
+
+    sget-object p2, Lໞ/ᑬ;->ށ:Lໞ/ᑬ;
+
+    invoke-virtual {p1, p2}, Lcom/unity3d/ads/InterstitialAd$show$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+    .param p1    # Ljava/lang/Object;
+        .annotation build Lorg/jetbrains/annotations/NotNull;
+        .end annotation
+    .end param
+    .annotation build Lorg/jetbrains/annotations/Nullable;
+    .end annotation
+
+    sget-object v0, LᏏ/ށ;->Ѐ:LᏏ/ށ;
+
+    iget v0, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->label:I
+
+    if-nez v0, :cond_5
+
+    invoke-static {p1}, Lio/bidmachine/ᗙ;->ඊ(Ljava/lang/Object;)V
+
+    new-instance p1, Lcom/unity3d/ads/core/data/model/ShowConfigurationInternal;
+
+    iget-object v0, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/unity3d/ads/ShowConfiguration;->getCustomRewardString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v0, v1
+
+    :goto_0
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Lcom/unity3d/ads/ShowConfiguration;->getExtras()Ljava/util/Map;
+
+    move-result-object v2
+
+    if-nez v2, :cond_2
+
+    :cond_1
+    sget-object v2, Lघ/ᐩ;->Ѐ:Lघ/ᐩ;
+
+    :cond_2
+    invoke-direct {p1, v0, v2}, Lcom/unity3d/ads/core/data/model/ShowConfigurationInternal;-><init>(Ljava/lang/String;Ljava/util/Map;)V
+
+    new-instance v0, Lcom/unity3d/ads/UnityAdsShowOptions;
+
+    invoke-direct {v0}, Lcom/unity3d/ads/UnityAdsShowOptions;-><init>()V
+
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    invoke-static {v2}, Lcom/unity3d/ads/InterstitialAd;->access$getAdObject$p(Lcom/unity3d/ads/InterstitialAd;)Lcom/unity3d/ads/core/data/model/AdObject;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/unity3d/ads/core/data/model/AdObject;->getOpportunityId()Lcom/google/protobuf/ByteString;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lcom/unity3d/ads/core/extensions/ProtobufExtensionsKt;->toUUID(Lcom/google/protobuf/ByteString;)Ljava/util/UUID;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lcom/unity3d/ads/UnityAdsBaseOptions;->setObjectId(Ljava/lang/String;)V
+
+    iput-object p1, v0, Lcom/unity3d/ads/UnityAdsShowOptions;->showConfiguration:Lcom/unity3d/ads/core/data/model/ShowConfigurationInternal;
+
+    new-instance p1, Lcom/unity3d/ads/metadata/MetaData;
+
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$activity:Landroid/app/Activity;
+
+    invoke-direct {p1, v2}, Lcom/unity3d/ads/metadata/MetaData;-><init>(Landroid/content/Context;)V
+
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    if-eqz v2, :cond_3
+
+    invoke-virtual {v2}, Lcom/unity3d/ads/ShowConfiguration;->getExtras()Ljava/util/Map;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_3
+
+    invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/util/Map$Entry;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/String;
+
+    invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-virtual {p1, v4, v3}, Lcom/unity3d/ads/metadata/MetaData;->set(Ljava/lang/String;Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    :cond_3
+    invoke-virtual {p1}, Lcom/unity3d/ads/metadata/MetaData;->commit()V
+
+    iget-object p1, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    invoke-static {p1}, Lcom/unity3d/ads/InterstitialAd;->access$getAdObject$p(Lcom/unity3d/ads/InterstitialAd;)Lcom/unity3d/ads/core/data/model/AdObject;
+
+    move-result-object p1
+
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    invoke-virtual {p1, v2}, Lcom/unity3d/ads/core/data/model/AdObject;->setShowConfiguration(Lcom/unity3d/ads/ShowConfiguration;)V
+
+    iget-object p1, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    invoke-static {p1}, Lcom/unity3d/ads/InterstitialAd;->access$getAdObject$p(Lcom/unity3d/ads/InterstitialAd;)Lcom/unity3d/ads/core/data/model/AdObject;
+
+    move-result-object p1
+
+    iget-object v2, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$configuration:Lcom/unity3d/ads/ShowConfiguration;
+
+    if-eqz v2, :cond_4
+
+    invoke-virtual {v2}, Lcom/unity3d/ads/ShowConfiguration;->getCustomRewardString()Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_2
+
+    :cond_4
+    move-object v2, v1
+
+    :goto_2
+    invoke-virtual {p1, v2}, Lcom/unity3d/ads/core/data/model/AdObject;->setPlayerServerId(Ljava/lang/String;)V
+
+    iget-object p1, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    invoke-static {p1}, Lcom/unity3d/ads/InterstitialAd;->access$getAdObject$p(Lcom/unity3d/ads/InterstitialAd;)Lcom/unity3d/ads/core/data/model/AdObject;
+
+    move-result-object p1
+
+    new-instance v2, Ljava/lang/ref/WeakReference;
+
+    iget-object v3, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$activity:Landroid/app/Activity;
+
+    invoke-direct {v2, v3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    invoke-virtual {p1, v2}, Lcom/unity3d/ads/core/data/model/AdObject;->setActivity(Ljava/lang/ref/WeakReference;)V
+
+    new-instance p1, Lcom/unity3d/services/UnityAdsSDK;
+
+    const/4 v2, 0x1
+
+    invoke-direct {p1, v1, v2, v1}, Lcom/unity3d/services/UnityAdsSDK;-><init>(Lcom/unity3d/services/core/di/IServiceProvider;ILkotlin/jvm/internal/ᒃ;)V
+
+    iget-object v1, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    invoke-static {v1}, Lcom/unity3d/ads/InterstitialAd;->access$getAdObject$p(Lcom/unity3d/ads/InterstitialAd;)Lcom/unity3d/ads/core/data/model/AdObject;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/unity3d/ads/core/data/model/AdObject;->getPlacementId()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/unity3d/ads/InterstitialAd$show$1$2;
+
+    iget-object v3, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->$listener:Lcom/unity3d/ads/InterstitialShowListener;
+
+    iget-object v4, p0, Lcom/unity3d/ads/InterstitialAd$show$1;->this$0:Lcom/unity3d/ads/InterstitialAd;
+
+    invoke-direct {v2, v3, v4}, Lcom/unity3d/ads/InterstitialAd$show$1$2;-><init>(Lcom/unity3d/ads/InterstitialShowListener;Lcom/unity3d/ads/InterstitialAd;)V
+
+    invoke-virtual {p1, v1, v0, v2}, Lcom/unity3d/services/UnityAdsSDK;->show(Ljava/lang/String;Lcom/unity3d/ads/UnityAdsShowOptions;Lcom/unity3d/ads/core/data/model/Listeners;)Lᙯ/ኮ;
+
+    sget-object p1, Lໞ/ᑬ;->ށ:Lໞ/ᑬ;
+
+    return-object p1
+
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method

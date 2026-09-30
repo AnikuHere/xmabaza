@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>cloak_model</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>update_window</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>update_link</key>
+        <value>""</value>
+    </entry>
+    <entry>
+        <key>admob_config</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>show_download</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>splash_open_duration</key>
+        <value>7000</value>
+    </entry>
+    <entry>
+        <key>ad_placement_and</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>shield_video_list</key>
+        <value>""</value>
+    </entry>
+    <entry>
+        <key>show_notification_and</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>ads_top_daily_ltv</key>
+        <value />
+    </entry>
+    <entry>
+        <key>ads_revenue_001</key>
+        <value>0.001</value>
+    </entry>
+    <entry>
+        <key>is_max_m_admob_report</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>fb_ad_impression</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>fb_top_daily_ltv</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>fb_taichi_001</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>close_clean</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>show_purcharse</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>not_sub_country</key>
+        <value>ALL</value>
+    </entry>
+    <entry>
+        <key>adwin_show_time</key>
+        <value>48</value>
+    </entry>
+    <entry>
+        <key>adwin_show_max_count</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>adwin_show_inter_count</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>close_download_country</key>
+        <value>ES</value>
+    </entry>
+    <entry>
+        <key>adwin_show_country</key>
+        <value />
+    </entry>
+    <entry>
+        <key>organic_user_start_count</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>organic_user_inter_time</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>adwin_web_url</key>
+        <value />
+    </entry>
+    <entry>
+        <key>play_request_param</key>
+        <value>{
+            "context": {
+            "client": {
+            "clientName": "ANDROID",
+            "clientVersion": "21.06.252",
+            "platform": "MOBILE"
+            }
+            },
+            "params": "gAQB8AUBygYQNTIxNTJCNDk0NkMyRjczRg%3D%3D",
+            "contentCheckOk": true,
+            "racyCheckOk": true
+            }</value>
+    </entry>
+    <entry>
+        <key>is_show_home_refresh_ad</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>is_show_home_list_ad</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>is_show_play_view_banner_ad</key>
+        <value>false</value>
+    </entry>
+</defaultsMap>

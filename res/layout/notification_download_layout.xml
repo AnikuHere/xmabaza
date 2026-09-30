@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notify_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/download_success_hint" />
+    <TextView android:id="@id/sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/download_success_hint" />
+    <TextView android:textColor="@color/teal_700" android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/listen_now" />
+</LinearLayout>

@@ -1,0 +1,104 @@
+{
+  "showCount": 100,
+  "sameInterval": 30,
+  "differentInterval": 30,
+  "timeOut": 10,
+  "mixDownloadTotalcount": 1,
+  "mixDownloadInternalcount": 1,
+  "downloadivtime": 0,
+  "openivtime": 30,
+  "mixnative": [
+    {
+      "adsource": "MAX",
+      "adweight": 1,
+      "adtype": "native",
+      "placementid": "28ef126f3b74fd83"
+    }
+  ],
+  "NVsearch": [
+    {
+      "adsource": "MAX",
+      "adweight": 1,
+      "adtype": "native",
+      "placementid": "be12cdb6813ba1d2"
+    }
+  ],
+  "mixIVswitchback": [
+    {
+      "adsource": "admob",
+      "adweight": 4,
+      "adtype": "open",
+      "placementid": "ca-app-pub-4055761602240548/3312139299"
+    },
+    {
+      "adsource": "MAX",
+      "adweight": 3,
+      "adtype": "interstitial",
+      "placementid": "b04e43a4b348c6bc"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "open",
+      "placementid": "ca-app-pub-4055761602240548/6350900363"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "open",
+      "placementid": "ca-app-pub-4055761602240548/6598312373"
+    }
+  ],
+  "mixIVplay": [
+    {
+      "adsource": "MAX",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "fd75211b3f69cd4a"
+    }
+  ],
+  "mixIVother": [
+    {
+      "adsource": "MAX",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "de8e957f07a1398c"
+    }
+  ],
+  "mixIVDownload": [
+    {
+      "adsource": "MAX",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "de8e957f07a1398c"
+    }
+  ],
+  "mixIV_h": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-4055761602240548/1677184807"
+    }
+  ],
+  "mixIVcleanBoost": [
+    {
+      "adsource": "admob",
+      "adweight": 3,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-4055761602240548/6394846324"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 2,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-4055761602240548/6066994525"
+    },
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-4055761602240548/8389905531"
+    }
+  ]
+}

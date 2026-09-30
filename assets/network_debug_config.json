@@ -1,0 +1,251 @@
+{
+  "china_firmid_network": {
+    "6": "Mintegral",
+    "8": "腾讯广告",
+    "15": "穿山甲",
+    "22": "百度",
+    "28": "快手",
+    "29": "Sigmob",
+    "39": "华为",
+    "49": "米盟",
+    "51": "游可赢",
+    "66": "Adx",
+    "69": "TapTap",
+    "72": "京媒",
+    "74": "趣盟",
+    "79": "Vivo广告联盟"
+  },
+  "china_firmid_network_en": {
+    "6": "Mintegral",
+    "8": "Tencent",
+    "15": "CSJ",
+    "22": "Baidu",
+    "28": "KuaiShou",
+    "29": "Sigmob",
+    "39": "Huawei",
+    "49": "Mi Union",
+    "51": "Klevin",
+    "66": "Adx",
+    "69": "TapTap",
+    "72": "JD",
+    "74": "QuMeng",
+    "79": "Vivo"
+  },
+  "nonchina_firmid_network": {
+    "1": "Facebook",
+    "2": "Admob",
+    "3": "Inmobi",
+    "5": "Applovin",
+    "6": "Mintegral",
+    "9": "Chartboost",
+    "11": "Ironsource",
+    "12": "UnityAds",
+    "13": "Vungle",
+    "14": "Adcolony",
+    "21": "Appnext",
+    "23": "Nend",
+    "24": "Maio",
+    "25": "Start.io",
+    "32": "Mytarget",
+    "34": "Yandex",
+    "36": "Ogury",
+    "37": "Fyber",
+    "39": "Huawei",
+    "45": "Kidoz",
+    "50": "Pangle",
+    "58": "Verve",
+    "59": "Bigo",
+    "66": "Adx",
+    "75": "Amazon",
+    "77": "Kwai"
+  },
+  "network_sdk_class_check": {
+    "china": {
+      "6": {
+        "sdk_class": "com.mbridge.msdk.MBridgeSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.mintegral.MintegralATInitManager"
+      },
+      "8": {
+        "sdk_class": "com.qq.e.comm.managers.GDTAdSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.gdt.GDTATInitManager"
+      },
+      "15": {
+        "sdk_class": "com.bytedance.sdk.openadsdk.TTAdSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.tto.TTOInitManager"
+      },
+      "22": {
+        "sdk_class": "com.baidu.mobads.sdk.api.BDAdConfig",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.baidu.BaiduATInitManager"
+      },
+      "28": {
+        "sdk_class": "com.kwad.sdk.api.KsAdSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.ks.KSATInitManager"
+      },
+      "29": {
+        "sdk_class": "com.sigmob.windad.WindAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.sigmob.SigmobATInitManager"
+      },
+      "39": {
+        "sdk_class": "com.huawei.hms.ads.HwAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.huawei.HuaweiInitManager"
+      },
+      "49": {
+        "sdk_class": "com.miui.zeus.mimo.sdk.MimoSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.mimo.MimoATInitManager"
+      },
+      "51": {
+        "sdk_class": "com.tencent.klevin.KlevinManager",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.klevin.KlevinATInitManager"
+      },
+      "66": {
+        "sdk_class": "com.secmtp.sdk.core.api.ATSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.adx.AdxInitManager"
+      },
+      "69": {
+        "sdk_class": "com.tapsdk.tapad.TapAdSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.tap.TapATInitManager"
+      },
+      "72": {
+        "sdk_class": "com.jd.ad.sdk.bl.initsdk.JADYunSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.jingdong.JADATInitManager"
+      },
+      "74": {
+        "sdk_class": "com.qumeng.advlib.api.AiClkAdManager",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.qumeng.QMATInitManager"
+      },
+      "79": {
+        "sdk_class": "com.vivo.mobilead.manager.VivoAdManager",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.vivo.VivoATInitManager"
+      }
+    },
+    "nonchina": {
+      "1": {
+        "sdk_class": "com.facebook.ads.AudienceNetworkAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.facebook.FacebookInitManager"
+      },
+      "2": {
+        "sdk_class": "com.google.android.gms.ads.MobileAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.admob.AdMobInitManager"
+      },
+      "3": {
+        "sdk_class": "com.inmobi.sdk.InMobiSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.imb.ImbInitManager"
+      },
+      "5": {
+        "sdk_class": "com.applovin.sdk.AppLovinSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.applovin.ApplovinInitManager"
+      },
+      "6": {
+        "sdk_class": "com.mbridge.msdk.MBridgeSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.mintegral.MintegralATInitManager"
+      },
+      "9": {
+        "sdk_class": "com.chartboost.sdk.Chartboost",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.cbt.CbtInitManager"
+      },
+      "11": {
+        "sdk_class": "com.ironsource.mediationsdk.IronSource",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.ironsource.IronsourceInitManager"
+      },
+      "12": {
+        "sdk_class": "com.unity3d.ads.UnityAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.unityads.UnityAdsInitManager"
+      },
+      "13": {
+        "sdk_class": "com.vungle.warren.Vungle",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.vungle.VungleInitManager"
+      },
+      "14": {
+        "sdk_class": "com.adcolony.sdk.AdColony",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.adcolony.AdColonyInitManager"
+      },
+      "21": {
+        "sdk_class": "com.appnext.base.Appnext",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.appnext.AppnextInitManager"
+      },
+      "23": {
+        "sdk_class": "net.nend.android.NendAdView",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.nend.NendInitManager"
+      },
+      "24": {
+        "sdk_class": "jp.maio.sdk.android.MaioAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.maio.MaioInitManager"
+      },
+      "25": {
+        "sdk_class": "com.startapp.sdk.adsbase.StartAppSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.startapp.StartAppInitManager"
+      },
+      "32": {
+        "sdk_class": "com.my.target.common.MyTargetActivity",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.mytarget.MyTargetInitManager"
+      },
+      "34": {
+        "sdk_class": "com.yandex.mobile.ads.common.MobileAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.yandex.YandexInitManager"
+      },
+      "36": {
+        "sdk_class": "com.ogury.sdk.Ogury",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.ogury.OguryInitManager"
+      },
+      "37": {
+        "sdk_class": "com.fyber.inneractive.sdk.external.InneractiveAdManager",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.fyb.FybInitManager"
+      },
+      "39": {
+        "sdk_class": "com.huawei.hms.ads.HwAds",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.huawei.HuaweiInitManager"
+      },
+      "45": {
+        "sdk_class": "com.kidoz.sdk.api.KidozSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.kidoz.KidozInitManager"
+      },
+      "50": {
+        "sdk_class": "com.bytedance.sdk.openadsdk.api.init.PAGSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.pgl.PglInitManager"
+      },
+      "58": {
+        "sdk_class": "net.pubnative.lite.sdk.HyBid",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.pubnative.PubNativeInitManager"
+      },
+      "59": {
+        "sdk_class": "sg.bigo.ads.BigoAdSdk",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.bigo.BigoInitManager"
+      },
+      "66": {
+        "sdk_class": "com.secmtp.sdk.core.api.ATSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.adx.AdxInitManager"
+      },
+      "75": {
+        "sdk_class": "com.amazon.device.ads.AdRegistration",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.amazon.AmazonInitManager"
+      },
+      "77": {
+        "sdk_class": "com.kwai.network.sdk.KwaiAdSDK",
+        "adapter_class": "com.secmtp.sdk.mediation.adapters.kwai.KwaiInitManager"
+      }
+    }
+  },
+  "network_sdk_class_check_new": {
+    "13": {
+      "sdk_class_array": [
+        "com.vungle.ads.VungleAds"
+      ]
+    },
+    "6": {
+      "adapter_class_array": [
+        "com.secmtp.sdk.mediation.adapters.mbg.MbgInitManager"
+      ]
+    }
+  },
+  "debug_mode_disable_network_firmid": [
+    21,
+    36,
+    45,
+    49,
+    51,
+    72,
+    74,
+    75,
+    79
+  ]
+}

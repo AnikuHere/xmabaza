@@ -1,0 +1,66 @@
+{
+  "showCount": 100,
+  "sameInterval": 30,
+  "differentInterval": 30,
+  "timeOut": 10,
+  "mixDownloadTotalcount": 1,
+  "mixDownloadInternalcount": 1,
+  "downloadivtime": 0,
+  "openivtime": 30,
+  "mixnative": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "native",
+      "placementid": "ca-app-pub-6683803235366791/2761119738"
+    }
+  ],
+  "NVsearch": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "native",
+      "placementid": "ca-app-pub-6683803235366791/3423348142"
+    }
+  ],
+  "mixIVswitchback": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "open",
+      "placementid": "ca-app-pub-6683803235366791/7768822260"
+    }
+  ],
+  "mixIVplay": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-6683803235366791/4588410560"
+    }
+  ],
+  "mixIVDownload": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "rewarded",
+      "placementid": "ca-app-pub-6683803235366791/3579449134"
+    }
+  ],
+  "mixIV_h": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interRewarded",
+      "placementid": "ca-app-pub-6683803235366791/1463340113"
+    }
+  ],
+  "mixIVother": [
+    {
+      "adsource": "admob",
+      "adweight": 1,
+      "adtype": "interstitial",
+      "placementid": "ca-app-pub-6683803235366791/1516073404"
+    }
+  ]
+}

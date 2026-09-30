@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" app:layout_constraintTop_toTopOf="parent" layout="@layout/header_home" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="false" android:overScrollMode="never">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/playlist_renecnt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/recent_cover" android:layout_width="101.0dip" android:layout_height="101.0dip" android:src="@mipmap/playlist_recently_cover" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:layout_width="101.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textStyle="bold" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recently_play" android:maxLines="2" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/main_small_text_color" android:ellipsize="end" android:id="@id/recently_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/audio_num_str" android:maxLines="1" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:orientation="vertical" android:id="@id/playlist_mycollect" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/like_cover" android:layout_width="101.0dip" android:layout_height="101.0dip" android:src="@mipmap/library_cover_like" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:layout_width="101.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textStyle="bold" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_save_playlist" android:maxLines="2" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/main_small_text_color" android:ellipsize="end" android:id="@id/like_songs_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/audio_num_str" android:maxLines="1" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/playlist_local" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/local_cache_cover" android:layout_width="101.0dip" android:layout_height="101.0dip" android:src="@mipmap/library_cover_cache" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:layout_width="101.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textStyle="bold" android:textColor="@color/main_text_color" android:id="@id/playlist_local_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_cache" android:maxLines="2" />
+                        <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/main_small_text_color" android:ellipsize="end" android:id="@id/local_songs_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/audio_num_str" android:maxLines="1" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/clean_boost_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:id="@id/clean_layout" android:background="@drawable/shape_round_14ffffff_r8" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_clean" android:layout_marginStart="16.0dip" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/main_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/clean" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:id="@id/boost_layout" android:background="@drawable/shape_round_14d8d8d8_r8" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0" android:layout_marginStart="15.0dip">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_speedup" android:layout_marginStart="16.0dip" />
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/main_text_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/boost" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/playlist_youtube" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:paddingStart="20.0dip">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/playlist_icon_youtube" />
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="16.0dip">
+                    <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_small_size" android:textStyle="bold" android:textColor="@color/main_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_youtube_playlist" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <FrameLayout android:layout_gravity="center" android:id="@id/ad_view_container" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="250.0dip" android:layout_marginTop="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintEnd_toEndOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/new_playlist_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/main_text_size" android:textColor="@color/main_text_color" android:id="@id/like_playlist_title" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/like_playlist" android:layout_marginStart="20.0dip" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/like_playlist_recyclerview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

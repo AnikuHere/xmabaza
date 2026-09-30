@@ -1,0 +1,1294 @@
+.class public final Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+.super Lcom/explorestack/protobuf/ற;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/bidmachine/protobuf/sdk/LifecycleMetricOrBuilder;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;,
+        Lio/bidmachine/protobuf/sdk/LifecycleMetric$LifecycleState;
+    }
+.end annotation
+
+
+# static fields
+.field private static final DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+.field private static final PARSER:Lcom/explorestack/protobuf/Ꮯ;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/explorestack/protobuf/\u13df;"
+        }
+    .end annotation
+.end field
+
+.field public static final REQUIRED_STATES_FIELD_NUMBER:I = 0x1
+
+.field private static final requiredStates_converter_:Lcom/explorestack/protobuf/ᛢ;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/explorestack/protobuf/\u16e2;"
+        }
+    .end annotation
+.end field
+
+.field private static final serialVersionUID:J
+
+
+# instance fields
+.field private memoizedIsInitialized:B
+
+.field private requiredStatesMemoizedSerializedSize:I
+
+.field private requiredStates_:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;
+
+    invoke-direct {v0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;-><init>()V
+
+    sput-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_converter_:Lcom/explorestack/protobuf/ᛢ;
+
+    new-instance v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    invoke-direct {v0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;-><init>()V
+
+    sput-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    new-instance v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric$2;
+
+    invoke-direct {v0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$2;-><init>()V
+
+    sput-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 5
+    invoke-direct {p0}, Lcom/explorestack/protobuf/ற;-><init>()V
+
+    const/4 v0, -0x1
+
+    .line 6
+    iput-byte v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->memoizedIsInitialized:B
+
+    .line 7
+    sget-object v0, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
+
+    iput-object v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/explorestack/protobuf/ԉ;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/explorestack/protobuf/\u0509;",
+            ")V"
+        }
+    .end annotation
+
+    .line 3
+    invoke-direct {p0, p1}, Lcom/explorestack/protobuf/ற;-><init>(Lcom/explorestack/protobuf/ԉ;)V
+
+    const/4 p1, -0x1
+
+    .line 4
+    iput-byte p1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->memoizedIsInitialized:B
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/explorestack/protobuf/ԉ;Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;-><init>(Lcom/explorestack/protobuf/ԉ;)V
+
+    return-void
+.end method
+
+.method private constructor <init>(Lcom/explorestack/protobuf/ᓒ;Lcom/explorestack/protobuf/ף;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 8
+    invoke-direct {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;-><init>()V
+
+    .line 9
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    invoke-static {}, Lcom/explorestack/protobuf/ᚇ;->ᛥ()Lcom/explorestack/protobuf/ݣ;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    move v2, v1
+
+    :cond_0
+    :goto_0
+    if-nez v1, :cond_8
+
+    .line 11
+    :try_start_0
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/ᓒ;->Ӟ()I
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-eqz v3, :cond_1
+
+    const/16 v5, 0x8
+
+    if-eq v3, v5, :cond_5
+
+    const/16 v5, 0xa
+
+    if-eq v3, v5, :cond_2
+
+    .line 12
+    invoke-virtual {p0, p1, v0, p2, v3}, Lcom/explorestack/protobuf/ற;->parseUnknownField(Lcom/explorestack/protobuf/ᓒ;Lcom/explorestack/protobuf/ݣ;Lcom/explorestack/protobuf/ף;I)Z
+
+    move-result v3
+
+    if-nez v3, :cond_0
+
+    :cond_1
+    move v1, v4
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_4
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_2
+
+    :catch_1
+    move-exception p1
+
+    goto :goto_3
+
+    .line 13
+    :cond_2
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/ᓒ;->ᕝ()I
+
+    move-result v3
+
+    .line 14
+    invoke-virtual {p1, v3}, Lcom/explorestack/protobuf/ᓒ;->Ѯ(I)I
+
+    move-result v3
+
+    .line 15
+    :goto_1
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/ᓒ;->ݔ()I
+
+    move-result v5
+
+    if-lez v5, :cond_4
+
+    .line 16
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/ᓒ;->Ϡ()I
+
+    move-result v5
+
+    if-nez v2, :cond_3
+
+    .line 17
+    new-instance v6, Ljava/util/ArrayList;
+
+    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v6, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    move v2, v4
+
+    .line 18
+    :cond_3
+    iget-object v6, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    invoke-interface {v6, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    .line 19
+    :cond_4
+    invoke-virtual {p1, v3}, Lcom/explorestack/protobuf/ᓒ;->ܙ(I)V
+
+    goto :goto_0
+
+    .line 20
+    :cond_5
+    invoke-virtual {p1}, Lcom/explorestack/protobuf/ᓒ;->Ϡ()I
+
+    move-result v3
+
+    if-nez v2, :cond_6
+
+    .line 21
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v5, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    move v2, v4
+
+    .line 22
+    :cond_6
+    iget-object v4, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Lcom/explorestack/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 23
+    :goto_2
+    :try_start_1
+    new-instance p2, Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+
+    invoke-direct {p2, p1}, Lcom/explorestack/protobuf/InvalidProtocolBufferException;-><init>(Ljava/io/IOException;)V
+
+    .line 24
+    invoke-virtual {p2, p0}, Lcom/explorestack/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/explorestack/protobuf/MessageLite;)Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+
+    move-result-object p1
+
+    throw p1
+
+    .line 25
+    :goto_3
+    invoke-virtual {p1, p0}, Lcom/explorestack/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/explorestack/protobuf/MessageLite;)Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+
+    move-result-object p1
+
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_4
+    if-eqz v2, :cond_7
+
+    .line 26
+    iget-object p2, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    .line 27
+    :cond_7
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/ݣ;->ᛥ()Lcom/explorestack/protobuf/ᚇ;
+
+    move-result-object p2
+
+    iput-object p2, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    .line 28
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/ற;->makeExtensionsImmutable()V
+
+    .line 29
+    throw p1
+
+    :cond_8
+    if-eqz v2, :cond_9
+
+    .line 30
+    iget-object p1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    .line 31
+    :cond_9
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/ݣ;->ᛥ()Lcom/explorestack/protobuf/ᚇ;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    .line 32
+    invoke-virtual {p0}, Lcom/explorestack/protobuf/ற;->makeExtensionsImmutable()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/explorestack/protobuf/ᓒ;Lcom/explorestack/protobuf/ף;Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;-><init>(Lcom/explorestack/protobuf/ᓒ;Lcom/explorestack/protobuf/ף;)V
+
+    return-void
+.end method
+
+.method public static synthetic access$200()Z
+    .locals 1
+
+    sget-boolean v0, Lcom/explorestack/protobuf/ற;->alwaysUseFieldBuilders:Z
+
+    return v0
+.end method
+
+.method public static synthetic access$400(Lio/bidmachine/protobuf/sdk/LifecycleMetric;)Ljava/util/List;
+    .locals 0
+
+    iget-object p0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method public static synthetic access$402(Lio/bidmachine/protobuf/sdk/LifecycleMetric;Ljava/util/List;)Ljava/util/List;
+    .locals 0
+
+    iput-object p1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    return-object p1
+.end method
+
+.method public static synthetic access$500(Lio/bidmachine/protobuf/sdk/LifecycleMetric;)Lcom/explorestack/protobuf/ᚇ;
+    .locals 0
+
+    iget-object p0, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    return-object p0
+.end method
+
+.method public static synthetic access$600()Lcom/explorestack/protobuf/Ꮯ;
+    .locals 1
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    return-object v0
+.end method
+
+.method public static synthetic access$700()Lcom/explorestack/protobuf/ᛢ;
+    .locals 1
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_converter_:Lcom/explorestack/protobuf/ᛢ;
+
+    return-object v0
+.end method
+
+.method public static getDefaultInstance()Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object v0
+.end method
+
+.method public static final getDescriptor()Lcom/explorestack/protobuf/Descriptors$Descriptor;
+    .locals 1
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/SDKViewabilityProto;->internal_static_bidmachine_protobuf_sdk_viewability_LifecycleMetric_descriptor:Lcom/explorestack/protobuf/Descriptors$Descriptor;
+
+    return-object v0
+.end method
+
+.method public static newBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    invoke-virtual {v0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->toBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lio/bidmachine/protobuf/sdk/LifecycleMetric;)Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+    .locals 1
+
+    .line 2
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    invoke-virtual {v0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->toBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;->mergeFrom(Lio/bidmachine/protobuf/sdk/LifecycleMetric;)Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    .line 2
+    invoke-static {v0, p0}, Lcom/explorestack/protobuf/ற;->parseDelimitedWithIOException(Lcom/explorestack/protobuf/Ꮯ;Ljava/io/InputStream;)Lcom/explorestack/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/explorestack/protobuf/ף;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 3
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    .line 4
+    invoke-static {v0, p0, p1}, Lcom/explorestack/protobuf/ற;->parseDelimitedWithIOException(Lcom/explorestack/protobuf/Ꮯ;Ljava/io/InputStream;Lcom/explorestack/protobuf/ף;)Lcom/explorestack/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/explorestack/protobuf/ByteString;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 3
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    invoke-interface {v0, p0}, Lcom/explorestack/protobuf/Ꮯ;->parseFrom(Lcom/explorestack/protobuf/ByteString;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/explorestack/protobuf/ByteString;Lcom/explorestack/protobuf/ף;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 4
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    invoke-interface {v0, p0, p1}, Lcom/explorestack/protobuf/Ꮯ;->parseFrom(Lcom/explorestack/protobuf/ByteString;Lcom/explorestack/protobuf/ף;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/explorestack/protobuf/ᓒ;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 11
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    .line 12
+    invoke-static {v0, p0}, Lcom/explorestack/protobuf/ற;->parseWithIOException(Lcom/explorestack/protobuf/Ꮯ;Lcom/explorestack/protobuf/ᓒ;)Lcom/explorestack/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/explorestack/protobuf/ᓒ;Lcom/explorestack/protobuf/ף;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 13
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    .line 14
+    invoke-static {v0, p0, p1}, Lcom/explorestack/protobuf/ற;->parseWithIOException(Lcom/explorestack/protobuf/Ꮯ;Lcom/explorestack/protobuf/ᓒ;Lcom/explorestack/protobuf/ף;)Lcom/explorestack/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 7
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    .line 8
+    invoke-static {v0, p0}, Lcom/explorestack/protobuf/ற;->parseWithIOException(Lcom/explorestack/protobuf/Ꮯ;Ljava/io/InputStream;)Lcom/explorestack/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/explorestack/protobuf/ף;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 9
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    .line 10
+    invoke-static {v0, p0, p1}, Lcom/explorestack/protobuf/ற;->parseWithIOException(Lcom/explorestack/protobuf/Ꮯ;Ljava/io/InputStream;Lcom/explorestack/protobuf/ף;)Lcom/explorestack/protobuf/Message;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    invoke-interface {v0, p0}, Lcom/explorestack/protobuf/Ꮯ;->parseFrom(Ljava/nio/ByteBuffer;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/explorestack/protobuf/ף;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 2
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    invoke-interface {v0, p0, p1}, Lcom/explorestack/protobuf/Ꮯ;->parseFrom(Ljava/nio/ByteBuffer;Lcom/explorestack/protobuf/ף;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([B)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 5
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    invoke-interface {v0, p0}, Lcom/explorestack/protobuf/Ꮯ;->parseFrom([B)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([BLcom/explorestack/protobuf/ף;)Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/explorestack/protobuf/InvalidProtocolBufferException;
+        }
+    .end annotation
+
+    .line 6
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    invoke-interface {v0, p0, p1}, Lcom/explorestack/protobuf/Ꮯ;->parseFrom([BLcom/explorestack/protobuf/ף;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object p0
+.end method
+
+.method public static parser()Lcom/explorestack/protobuf/Ꮯ;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/explorestack/protobuf/\u13df;"
+        }
+    .end annotation
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p1, p0, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    if-nez v1, :cond_1
+
+    invoke-super {p0, p1}, Lcom/explorestack/protobuf/AbstractMessage;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_1
+    check-cast p1, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    iget-object v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    iget-object v2, p1, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v1, v2}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget-object v1, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    iget-object p1, p1, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    invoke-virtual {v1, p1}, Lcom/explorestack/protobuf/ᚇ;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    return v2
+
+    :cond_3
+    return v0
+.end method
+
+.method public bridge synthetic getDefaultInstanceForType()Lcom/explorestack/protobuf/Message;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getDefaultInstanceForType()Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic getDefaultInstanceForType()Lcom/explorestack/protobuf/MessageLite;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getDefaultInstanceForType()Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getDefaultInstanceForType()Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+    .locals 1
+
+    .line 3
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    return-object v0
+.end method
+
+.method public getParserForType()Lcom/explorestack/protobuf/Ꮯ;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/explorestack/protobuf/\u13df;"
+        }
+    .end annotation
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->PARSER:Lcom/explorestack/protobuf/Ꮯ;
+
+    return-object v0
+.end method
+
+.method public getRequiredStates(I)Lio/bidmachine/protobuf/sdk/LifecycleMetric$LifecycleState;
+    .locals 2
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_converter_:Lcom/explorestack/protobuf/ᛢ;
+
+    iget-object v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v1, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1}, Lcom/explorestack/protobuf/ᛢ;->convert(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lio/bidmachine/protobuf/sdk/LifecycleMetric$LifecycleState;
+
+    return-object p1
+.end method
+
+.method public getRequiredStatesCount()I
+    .locals 1
+
+    iget-object v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getRequiredStatesList()Ljava/util/List;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lio/bidmachine/protobuf/sdk/LifecycleMetric$LifecycleState;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/explorestack/protobuf/ω;
+
+    iget-object v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    sget-object v2, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_converter_:Lcom/explorestack/protobuf/ᛢ;
+
+    invoke-direct {v0, v1, v2}, Lcom/explorestack/protobuf/ω;-><init>(Ljava/util/List;Lcom/explorestack/protobuf/ᛢ;)V
+
+    return-object v0
+.end method
+
+.method public getRequiredStatesValue(I)I
+    .locals 1
+
+    iget-object v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Integer;
+
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public getRequiredStatesValueList()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    return-object v0
+.end method
+
+.method public getSerializedSize()I
+    .locals 3
+
+    iget v0, p0, Lcom/explorestack/protobuf/AbstractMessage;->memoizedSize:I
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    :goto_0
+    iget-object v2, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v2
+
+    if-ge v0, v2, :cond_1
+
+    iget-object v2, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Integer;
+
+    invoke-static {v1, v2}, Lcom/android/billingclient/api/ი;->ᇰ(ILjava/lang/Integer;)I
+
+    move-result v1
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getRequiredStatesList()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    add-int/lit8 v0, v1, 0x1
+
+    invoke-static {v1}, Lcom/explorestack/protobuf/ள;->ᓹ(I)I
+
+    move-result v2
+
+    add-int/2addr v2, v0
+
+    goto :goto_1
+
+    :cond_2
+    move v2, v1
+
+    :goto_1
+    iput v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStatesMemoizedSerializedSize:I
+
+    iget-object v0, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    invoke-virtual {v0}, Lcom/explorestack/protobuf/ᚇ;->getSerializedSize()I
+
+    move-result v0
+
+    add-int/2addr v0, v2
+
+    iput v0, p0, Lcom/explorestack/protobuf/AbstractMessage;->memoizedSize:I
+
+    return v0
+.end method
+
+.method public final getUnknownFields()Lcom/explorestack/protobuf/ᚇ;
+    .locals 1
+
+    iget-object v0, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .locals 4
+
+    iget v0, p0, Lcom/explorestack/protobuf/ᇰ;->memoizedHashCode:I
+
+    if-eqz v0, :cond_0
+
+    return v0
+
+    :cond_0
+    invoke-static {}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getDescriptor()Lcom/explorestack/protobuf/Descriptors$Descriptor;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    add-int/lit16 v0, v0, 0x30b
+
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getRequiredStatesCount()I
+
+    move-result v1
+
+    if-lez v1, :cond_1
+
+    const/16 v1, 0x25
+
+    const/4 v2, 0x1
+
+    const/16 v3, 0x35
+
+    invoke-static {v0, v1, v2, v3}, Landroid/support/v4/media/ᔍ;->ج(IIII)I
+
+    move-result v0
+
+    iget-object v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    :cond_1
+    mul-int/lit8 v0, v0, 0x1d
+
+    iget-object v1, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    iget-object v1, v1, Lcom/explorestack/protobuf/ᚇ;->Ѐ:Ljava/util/Map;
+
+    invoke-interface {v1}, Ljava/util/Map;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    iput v1, p0, Lcom/explorestack/protobuf/ᇰ;->memoizedHashCode:I
+
+    return v1
+.end method
+
+.method public internalGetFieldAccessorTable()Lcom/explorestack/protobuf/బ;
+    .locals 3
+
+    sget-object v0, Lio/bidmachine/protobuf/sdk/SDKViewabilityProto;->internal_static_bidmachine_protobuf_sdk_viewability_LifecycleMetric_fieldAccessorTable:Lcom/explorestack/protobuf/బ;
+
+    const-class v1, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    const-class v2, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    invoke-virtual {v0, v1, v2}, Lcom/explorestack/protobuf/బ;->ᇰ(Ljava/lang/Class;Ljava/lang/Class;)V
+
+    return-object v0
+.end method
+
+.method public final isInitialized()Z
+    .locals 2
+
+    iget-byte v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->memoizedIsInitialized:B
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    return v1
+
+    :cond_0
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_1
+    iput-byte v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->memoizedIsInitialized:B
+
+    return v1
+.end method
+
+.method public bridge synthetic newBuilderForType()Lcom/explorestack/protobuf/Message$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->newBuilderForType()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic newBuilderForType(Lcom/explorestack/protobuf/ष;)Lcom/explorestack/protobuf/Message$Builder;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->newBuilderForType(Lcom/explorestack/protobuf/ष;)Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic newBuilderForType()Lcom/explorestack/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .line 3
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->newBuilderForType()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public newBuilderForType()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+    .locals 1
+
+    .line 4
+    invoke-static {}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->newBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public newBuilderForType(Lcom/explorestack/protobuf/ष;)Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+    .locals 2
+
+    .line 5
+    new-instance v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, v1}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;-><init>(Lcom/explorestack/protobuf/ष;Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;)V
+
+    return-object v0
+.end method
+
+.method public newInstance(Lcom/explorestack/protobuf/ࢶ;)Ljava/lang/Object;
+    .locals 0
+
+    new-instance p1, Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    invoke-direct {p1}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;-><init>()V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic toBuilder()Lcom/explorestack/protobuf/Message$Builder;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->toBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic toBuilder()Lcom/explorestack/protobuf/MessageLite$Builder;
+    .locals 1
+
+    .line 2
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->toBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public toBuilder()Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+    .locals 2
+
+    .line 3
+    sget-object v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->DEFAULT_INSTANCE:Lio/bidmachine/protobuf/sdk/LifecycleMetric;
+
+    const/4 v1, 0x0
+
+    if-ne p0, v0, :cond_0
+
+    .line 4
+    new-instance v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    invoke-direct {v0, v1}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;-><init>(Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;)V
+
+    return-object v0
+
+    :cond_0
+    new-instance v0, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    invoke-direct {v0, v1}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;-><init>(Lio/bidmachine/protobuf/sdk/LifecycleMetric$1;)V
+
+    invoke-virtual {v0, p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;->mergeFrom(Lio/bidmachine/protobuf/sdk/LifecycleMetric;)Lio/bidmachine/protobuf/sdk/LifecycleMetric$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public writeTo(Lcom/explorestack/protobuf/ள;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getSerializedSize()I
+
+    invoke-virtual {p0}, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->getRequiredStatesList()Ljava/util/List;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    const/16 v0, 0xa
+
+    invoke-virtual {p1, v0}, Lcom/explorestack/protobuf/ள;->ᛗ(I)V
+
+    iget v0, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStatesMemoizedSerializedSize:I
+
+    invoke-virtual {p1, v0}, Lcom/explorestack/protobuf/ள;->ᛗ(I)V
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_1
+
+    iget-object v1, p0, Lio/bidmachine/protobuf/sdk/LifecycleMetric;->requiredStates_:Ljava/util/List;
+
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    invoke-virtual {p1, v1}, Lcom/explorestack/protobuf/ள;->ᕄ(I)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    iget-object v0, p0, Lcom/explorestack/protobuf/ற;->unknownFields:Lcom/explorestack/protobuf/ᚇ;
+
+    invoke-virtual {v0, p1}, Lcom/explorestack/protobuf/ᚇ;->writeTo(Lcom/explorestack/protobuf/ள;)V
+
+    return-void
+.end method

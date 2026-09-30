@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/header_layout" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="44.0dip" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/header_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ic_back_left" android:paddingStart="20.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/main_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/header_title" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_back_left" android:text="@string/downloading" android:maxLines="1" android:layout_weight="1.0" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/header_more" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@mipmap/ic_delete" android:paddingEnd="20.0dip" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/header_layout" />
+    <include android:id="@id/empty_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/header_layout" layout="@layout/default_empty_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
